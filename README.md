@@ -58,13 +58,6 @@ To make the block available in the Xcos GUI, run these commands in the console:
 
 ---
 
-## 📊 Technical Specifications
-Feature	Description
-Logic	Interface function adapts ports dynamically
-File Format	Standard .csv (Comma separated)
-Compatibility	Tested on Scilab 6.1+ / 2024.0
-Output Rule	Noutputs​=Total Columns−1
-
 ## 📜 License
 
 This project is licensed under the Apache License 2.0.
