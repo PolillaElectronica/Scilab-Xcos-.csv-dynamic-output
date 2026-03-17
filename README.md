@@ -27,7 +27,7 @@ Before opening Xcos, you need to register the new block in Scilab:
 </details>
 
 <details>
-<summary><b>2. Add the Block to Xcos Palette ⬇️</b></summary>
+  <summary><b>2. Add the Block to Xcos Palette ⬇️</b></summary>
 
 To make the block available in the Xcos GUI, run these commands in the console:
 
@@ -39,7 +39,7 @@ xcosPalAdd(pal, "My CSV Blocks");
 </details>
 
 <details>
-<summary><b>3. Configuration & Usage ⬇️</b></summary>
+  <summary><b>3. Configuration & Usage ⬇️</b></summary>
 
     Open Xcos and drag your new block into the diagram.
 
@@ -54,7 +54,7 @@ xcosPalAdd(pal, "My CSV Blocks");
     Ensure your CSV file uses commas (,) as delimiters.
 
 </details>
-
+---
 ##📊 Technical Specifications
 Feature	Description
 Logic	Interface function adapts ports dynamically
