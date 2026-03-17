@@ -77,15 +77,3 @@ If you use this block in your research or engineering projects, please cite it a
 Developed by Iván Cánovas Martín
 
 
----
-
-### How to apply this:
-1. Open your `README.md` on GitHub.
-2. Click the **pencil icon** (edit).
-3. Delete everything and paste the code above.
-4. **Save changes.** ### Why this works:
-* **The "Summary" tags:** Your technical instructions from `INSTRUCTIONS.md` are now tucked away in neat dropdowns so they don't clutter the page.
-* **Badges:** The red/blue tags at the top make it look like an official Scilab extension.
-* **Code highlighting:** I used ` ```scilab ` so the code you wrote in your instructions looks clean and colored.
-
-Would you like me to help you create a specific **social preview image** (the image that appears when you share your link on LinkedIn or Reddit)?
