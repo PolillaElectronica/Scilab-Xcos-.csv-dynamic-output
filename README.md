@@ -55,16 +55,18 @@ xcosPalAdd(pal, "My CSV Blocks");
 
 </details>
 
-📊 Technical Specifications
+##📊 Technical Specifications
 Feature	Description
 Logic	Interface function adapts ports dynamically
 File Format	Standard .csv (Comma separated)
 Compatibility	Tested on Scilab 6.1+ / 2024.0
 Output Rule	Noutputs​=Total Columns−1
-📜 License
+
+##📜 License
 
 This project is licensed under the Apache License 2.0.
-🎓 Citation
+
+##🎓 Citation
 
 If you use this block in your research or engineering projects, please cite it as:
 
