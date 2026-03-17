@@ -1,3 +1,8 @@
+// Iván Cánovas Martín
+//
+
+
+
 function [x, y, typ] = lector_csv_2(job, arg1, arg2)
     x = []; y = []; typ = [];
     
@@ -63,7 +68,14 @@ function [x, y, typ] = lector_csv_2(job, arg1, arg2)
         model.dep_ut = [%f, %f];
         
         exprs = [ruta_defecto];
-        gr_i = [];
+        gr_i = [
+        'thick = xget(""thickness"");xset(""thickness"",2);';
+        'xx = [orig(1), orig(1)+sz(1), orig(1)+sz(2), orig(1)];';
+        'yy = [orig(2), orig(2), orig(2)+sz(2), orig(2)+sz(2)];';
+        'xpoly(xx, yy, ""lines"");';
+        'xstringb(orig(1), orig(2), ""Lector CSV"", sz(1), sz(2), ""fill"");';
+        'xset(""thickness"", thick);'
+        ];
         x = standard_define([3 2], model, exprs, gr_i);
         x.graphics.style = ["blockWithLabel;displayedLabel=""Lector CSV 2"""];
     end
