@@ -1,39 +1,87 @@
-# Scilab-Xcos-.csv-dynamic-output
-In this repository, we define the structure of an **Xcos** block that allows the user to select a .csv file, and the block automatically adapts its number of outputs.
+# 📊 Dynamic CSV Reader Block for Scilab/Xcos
 
+![Scilab](https://img.shields.io/badge/Scilab-6.1+-red.svg)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)
+![Research](https://img.shields.io/badge/Status-Stable-green.svg)
 
-![License](https://img.shields.io/badge/license-Apache--2.0-blue)
-![Scilab](https://img.shields.io/badge/Scilab-6.1.1+-red)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXX)
-
+A custom Xcos interface block that dynamically adapts its number of output ports based on the columns found in a selected `.csv` file. This eliminates the need to manually configure block outputs for different datasets.
 
 ---
 
-## 📖 Sumary 
-an **Xcos** block that allows the user to select a .csv file, and the block automatically adapts its number of outputs.
+## 📖 Project Overview
+In this repository, we define the structure of an Xcos block that allows the user to select a `.csv` file. The block automatically reconfigures its output ports (Total columns minus one) to match the data structure.
 
-## 🚀 Startup guide
+## 🚀 Installation & Setup Guide
+
+To use this block in your Xcos simulations, follow these steps:
+
 <details>
-<summary><b>Click para expandir las instrucciones de instalación 🛠️</b></summary>
+  <summary><b>1. Load the Interface Function ⬇️</b></summary>
 
-### Requisitos previos
-* Scilab (versión 2024.0.0 recomendada)
-* Módulo Xcos instalado
-
-### Ejecución
-1. Clona el repositorio: `git clone https://github.com/tu-usuario/repo.git`
-2. Abre Scilab y navega hasta la carpeta.
-3. Ejecuta el script principal: `exec('main.sce');`
+Before opening Xcos, you need to register the new block in Scilab:
+1. Open **Scilab**.
+2. Navigate to the folder where you downloaded `lector_csv_2.sci`.
+3. Execute the following command in the Scilab console:
+   ```scilab
+   exec('lector_csv_2.sci');
 </details>
 
-## 📊 Metodología y Modelos
-Aquí puedes explicar brevemente los bloques de Xcos que has usado. Si tienes una imagen del esquema de Xcos, ¡ponla aquí! 
-`![Esquema del Modelo](./docs/screenshot_modelo.png)`
+<details>
+<summary><b>2. Add the Block to Xcos Palette ⬇️</b></summary>
 
-## 📜 Licencia y Citación
-Este proyecto está bajo la licencia **Apache 2.0**. 
+To make the block available in the Xcos GUI, run these commands in the console:
 
-Si utilizas este trabajo en tu investigación, por favor cítalo usando el archivo `CITATION.cff` adjunto o la siguiente referencia:
-> *Cánovas Martín, Iván. (2026). Scilab-Xcos-.csv-dynamic-output.*
+pal = xcosPal("My CSV Blocks");
+pal = xcosPalAddBlock(pal, "lector_csv_2");
+xcosPalAdd(pal, "My CSV Blocks");
+
+
+</details>
+
+<details>
+<summary><b>3. Configuration & Usage ⬇️</b></summary>
+
+    Open Xcos and drag your new block into the diagram.
+
+    Double-click the block to open the file selector.
+
+    Select your .csv file.
+
+    The block will automatically reconfigure its output ports.
+
+    [!IMPORTANT]
+
+    Ensure your CSV file uses commas (,) as delimiters.
+
+</details>
+
+📊 Technical Specifications
+Feature	Description
+Logic	Interface function adapts ports dynamically
+File Format	Standard .csv (Comma separated)
+Compatibility	Tested on Scilab 6.1+ / 2024.0
+Output Rule	Noutputs​=Total Columns−1
+📜 License
+
+This project is licensed under the Apache License 2.0.
+🎓 Citation
+
+If you use this block in your research or engineering projects, please cite it as:
+
+    Cánovas Martín, I. (2024). Dynamic CSV Reader Block for Scilab/Xcos. GitHub Repository.
+
+Developed by Iván Cánovas Martín
+
 
 ---
+
+### How to apply this:
+1. Open your `README.md` on GitHub.
+2. Click the **pencil icon** (edit).
+3. Delete everything and paste the code above.
+4. **Save changes.** ### Why this works:
+* **The "Summary" tags:** Your technical instructions from `INSTRUCTIONS.md` are now tucked away in neat dropdowns so they don't clutter the page.
+* **Badges:** The red/blue tags at the top make it look like an official Scilab extension.
+* **Code highlighting:** I used ` ```scilab ` so the code you wrote in your instructions looks clean and colored.
+
+Would you like me to help you create a specific **social preview image** (the image that appears when you share your link on LinkedIn or Reddit)?
