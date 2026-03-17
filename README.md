@@ -30,10 +30,10 @@ Before opening Xcos, you need to register the new block in Scilab:
   <summary><b>2. Add the Block to Xcos Palette ⬇️</b></summary>
 
 To make the block available in the Xcos GUI, run these commands in the console:
-
-pal = xcosPal("My CSV Blocks");
-pal = xcosPalAddBlock(pal, "lector_csv_2");
-xcosPalAdd(pal, "My CSV Blocks");
+   ```scilab
+   pal = xcosPal("My CSV Blocks");
+   pal = xcosPalAddBlock(pal, "lector_csv_2");
+   xcosPalAdd(pal, "My CSV Blocks");
 
 
 </details>
