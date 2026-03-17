@@ -68,7 +68,7 @@ This project is licensed under the Apache License 2.0.
 
 If you use this block in your research or engineering projects, please cite it as:
 
-    Cánovas Martín, I. (2024). Dynamic CSV Reader Block for Scilab/Xcos. GitHub Repository.
+    Cánovas Martín, Iván (2026). Dynamic CSV Reader Block for Scilab/Xcos. GitHub Repository.
 
 Developed by Iván Cánovas Martín
 
