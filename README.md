@@ -38,7 +38,7 @@ To make the block available in the Xcos GUI, run these commands in the console:
 
 </details>
 
-<details>
+</details>
   <summary><b>3. Configuration & Usage ⬇️</b></summary>
 
     Open Xcos and drag your new block into the diagram.
